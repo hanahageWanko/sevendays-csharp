@@ -7,15 +7,14 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      List<String> a = new List<String>();
-      a.Add("Taro");
-      a.Add("Hanako");
-      a.Add("Jiro");
-      a.Add("Kaoru");
-      a.Remove("Taro");
-      a.RemoveAt(1);
-      foreach (String s in a){
-        Console.WriteLine(s);
+      Dictionary<String, String> capital = new Dictionary<String, String>();
+      capital["日本"] = "東京";
+      capital["イギリス"] = "ロンドン";
+      capital["フランス"]  = "パリ";
+      capital["中国"]  = "北京";
+      Console.WriteLine("世界の首都");
+      foreach(String s in capital.Keys){
+        Console.WriteLine("{0}の首都は{1}です", s, capital[s]);
       }
     }
   }
