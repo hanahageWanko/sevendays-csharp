@@ -6,12 +6,10 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      Crow c = new Crow();
-      Sparrow s = new Sparrow();
-      Console.WriteLine(c.Name + " : ");
-      c.Sing();
-      Console.WriteLine(s.Name + " : ");
-      s.Sing();
+      Vector v = new Vector();
+      v.X = 0.1;
+      v.Y = 0.2;
+      Console.WriteLine("v=({0}, {1})", v.X, v.Y);
     }
   }
 }
