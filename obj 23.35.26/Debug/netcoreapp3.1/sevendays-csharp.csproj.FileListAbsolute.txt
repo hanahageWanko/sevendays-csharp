@@ -1,0 +1,12 @@
+/Users/Weby/Desktop/git/sevendays-csharp/bin/Debug/netcoreapp3.1/sevendays-csharp.deps.json
+/Users/Weby/Desktop/git/sevendays-csharp/bin/Debug/netcoreapp3.1/sevendays-csharp.runtimeconfig.json
+/Users/Weby/Desktop/git/sevendays-csharp/bin/Debug/netcoreapp3.1/sevendays-csharp.runtimeconfig.dev.json
+/Users/Weby/Desktop/git/sevendays-csharp/bin/Debug/netcoreapp3.1/sevendays-csharp.dll
+/Users/Weby/Desktop/git/sevendays-csharp/bin/Debug/netcoreapp3.1/sevendays-csharp.pdb
+/Users/Weby/Desktop/git/sevendays-csharp/obj/Debug/netcoreapp3.1/sevendays-csharp.csprojAssemblyReference.cache
+/Users/Weby/Desktop/git/sevendays-csharp/obj/Debug/netcoreapp3.1/sevendays-csharp.AssemblyInfoInputs.cache
+/Users/Weby/Desktop/git/sevendays-csharp/obj/Debug/netcoreapp3.1/sevendays-csharp.AssemblyInfo.cs
+/Users/Weby/Desktop/git/sevendays-csharp/obj/Debug/netcoreapp3.1/sevendays-csharp.csproj.CoreCompileInputs.cache
+/Users/Weby/Desktop/git/sevendays-csharp/obj/Debug/netcoreapp3.1/sevendays-csharp.dll
+/Users/Weby/Desktop/git/sevendays-csharp/obj/Debug/netcoreapp3.1/sevendays-csharp.pdb
+/Users/Weby/Desktop/git/sevendays-csharp/obj/Debug/netcoreapp3.1/sevendays-csharp.genruntimeconfig.cache
