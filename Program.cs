@@ -6,22 +6,17 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      Console.Write("1から3の整数を入力");
-      int num = int.Parse(Console.ReadLine());
-      switch (num)
+      int[] n = { 5, 4, 3, 2, 1 };
+      string[] s = { "ABC", "DEF", "GHI" };
+      int i;
+      for (i = 0; i < n.Length; i++)
       {
-        case 1:
-          Console.WriteLine("one");
-          break;
-        case 2:
-          Console.WriteLine("two");
-          break;
-        case 3:
-          Console.WriteLine("three");
-          break;
-        default:
-          Console.WriteLine("不適切な値です");
-          break;
+        Console.Write(n[i] + " ");
+      }
+      Console.WriteLine();
+      for (i = 0; i < s.Length; i++)
+      {
+        Console.Write(s[i] + " ");
       }
     }
   }
