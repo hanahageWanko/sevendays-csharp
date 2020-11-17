@@ -6,17 +6,22 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      Console.Write("整数値を入力");
-      int a = int.Parse(Console.ReadLine());
-      // int.Parse()は()内の文字列を整数の値に変換する役割を持つ
-      Console.WriteLine("a=" + a);
-      if (a > 0)
+      Console.Write("1から3の整数を入力");
+      int num = int.Parse(Console.ReadLine());
+      switch (num)
       {
-        Console.WriteLine("aは正の数です");
-      }
-      else
-      {
-        Console.WriteLine("aは整数じゃありません");
+        case 1:
+          Console.WriteLine("one");
+          break;
+        case 2:
+          Console.WriteLine("two");
+          break;
+        case 3:
+          Console.WriteLine("three");
+          break;
+        default:
+          Console.WriteLine("不適切な値です");
+          break;
       }
     }
   }
