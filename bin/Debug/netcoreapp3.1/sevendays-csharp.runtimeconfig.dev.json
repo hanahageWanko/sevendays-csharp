@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/Users/Weby/.dotnet/store/|arch|/|tfm|",
-      "/Users/Weby/.nuget/packages"
-    ]
-  }
-}
