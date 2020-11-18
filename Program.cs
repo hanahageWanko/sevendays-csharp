@@ -4,20 +4,19 @@ namespace sevendays_csharp
 {
   class Program
   {
-    private static int snum = 100;
-    public int inum = 200;
-    public static void foo(){
-      Console.WriteLine("fooメソッド(staticメソッド)");
-    }
-    public void bar() {
-      Console.WriteLine("barメソッド(インスタンスメソッド)");
-    }
-    static void Main(string[] args) {
-      Program p = new Program();
-      Console.WriteLine("pのインスタンスフィールド:inum = {0}", p.inum);
-      Console.WriteLine("programのクラスフィールド:snum = {0}", snum);
-      foo();
-      p.bar();
+    static void Main(string[] args){
+    Calculator c1 = new Calculator();
+    c1.Num1 = 10;
+    c1.Num2 = 3;
+    c1.add();
+    c1.sub();
+    ExCalculator c2 = new ExCalculator();
+    c2.Num1 = 10;
+    c2.Num2 = 3;
+    c2.add();
+    c2.sub();
+    c2.mul();
+    c2.div();
     }
   }
 }
