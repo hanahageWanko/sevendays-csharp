@@ -2,45 +2,21 @@ using System;
 
 namespace sevendays_csharp
 {
-  class Person
+  class Data
   {
-    private string name = "";
-    private int age = 0;
-    public Person() : this("名無し", 0)
-    {
-      Console.WriteLine("引数なしコンストラクタ");
+    // Dataオブジェクトの数
+    private static int num = 0;
+    // データの値
+    private int id;
+    // 引数つきコンストラクタ
+    public Data(int id) {
+      this.id = id;
+      num++;
+      Console.WriteLine("値：{0} 数：{1}", this.id, num);
     }
-    public Person(string name, int age)
-    {
-      this.name = name;
-      this.age = age;
-      Console.WriteLine("引数ありコンストラクタ　name: {0} , age: {1}", this.name, this.age);
-    }
-    public void ShowAgeAndName()
-    {
-      Console.WriteLine("名前: {0} 年齢：{1}", name, age);
-    }
-    public string Name
-    {
-      set
-      {
-        name = value;
-      }
-      get
-      {
-        return name;
-      }
-    }
-    public int Age
-    {
-      set
-      {
-        age = value;
-      }
-      get
-      {
-        return age;
-      }
+    // オブジェクトの数を取得
+    public static void ShowNumber() {
+      Console.WriteLine("Dataオブジェクトの数：{0}", num);
     }
   }
 }

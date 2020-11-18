@@ -7,13 +7,13 @@ namespace sevendays_csharp
     //多次元連想配列
     static void Main(string[] args)
     {
-      Person p1, p2;
-      p1 = new Person("佐野ひなこ", 23);
-      p2 = new Person();
-      p2.Name = "ばなな";
-      p2.Age = 67;
-      p1.ShowAgeAndName();
-      p2.ShowAgeAndName();
+      //  Dataクラスを3つ作る
+      Data [] d = new Data[2];
+      Data.ShowNumber();
+      for (int i = 0; i < d.Length; i++) {
+        d[i] = new Data(i * 100);
+        Data.ShowNumber();
+      }
     }
   }
 }
