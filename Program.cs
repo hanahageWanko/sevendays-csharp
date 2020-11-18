@@ -4,21 +4,16 @@ namespace sevendays_csharp
 {
   class Program
   {
-      //多次元連想配列
+    //多次元連想配列
     static void Main(string[] args)
     {
-      int[][] a = new int[][] { new int[] { 0, 1 }, new int[] { 2 }, new int[] { 3, 4, 5, 6 } };
-      //成分の表示
-      for (int m = 0; m < a.Length; m++)
-      {
-        for (int n = 0; n < a[m].Length; n++)
-        {
-          Console.Write(a[m][n] + " ");
-        }
-        Console.WriteLine();
-
-      }
-
+      Person p1, p2;
+      p1 = new Person("佐野ひなこ", 23);
+      p2 = new Person();
+      p2.Name = "ばなな";
+      p2.Age = 67;
+      p1.ShowAgeAndName();
+      p2.ShowAgeAndName();
     }
   }
 }
