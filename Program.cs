@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace sevendays_csharp
 {
@@ -6,13 +7,16 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      Dummy d  =new Dummy();
-      IFunc1 i1 = (IFunc1)d;
-      IFunc2 i2 = (IFunc2)d;
-      i1.Func1();
-      i1.Func2();
-      i2.Func2();
-      i2.Func3();
+      List<String> a = new List<String>();
+      a.Add("Taro");
+      a.Add("Hanako");
+      a.Add("Jiro");
+      a.Add("Kaoru");
+      a.Remove("Taro");
+      a.RemoveAt(1);
+      foreach (String s in a){
+        Console.WriteLine(s);
+      }
     }
   }
 }
