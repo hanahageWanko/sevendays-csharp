@@ -6,12 +6,12 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      {
-        Parent p = new Parent();
-        Child c = new Child();
-        p.Foo();
-        c.Foo();
-      };
+      Crow c = new Crow();
+      Sparrow s = new Sparrow();
+      Console.WriteLine(c.Name + " : ");
+      c.Sing();
+      Console.WriteLine(s.Name + " : ");
+      s.Sing();
     }
   }
 }
