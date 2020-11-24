@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KwkUJKGi1InQz6SKGVq9Ydr5ZX7kpi6q5cYnUDp/BpjOnFdvy1MspC+9/PXI7P1QZOVMSGLbkBjzeG75CX3z8w==",
+  "dgSpecHash": "3Sn7rznnzIAYd4Rm40w4NUIN3DysMWLO1Ov6FWHsMfZ5NIvfXJZ8dSvljsZyGVSqeNhw/Wcm1TbO6NwOOEvybQ==",
   "success": true,
   "projectFilePath": "/Users/Weby/Desktop/git/sevendays-csharp/sevendays-csharp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/Weby/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
   "logs": []
 }
