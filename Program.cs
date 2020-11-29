@@ -9,36 +9,34 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      Person p1 = new Person();
-      p1.Name = "tetteteeteet";
-      p1.Age = 11;
-      Console.WriteLine("名前：{0}　年齢:{1}", p1.Name, p1.Age);
-      // p1.SetNameAndAge("母母", 33, 22222222); 
-      p1.allShow(); 
+      Bird b  = new Bird(1, "カラーす", "カラス");
+      b.showData();
+      Bird.showStaticData();
+
     }
 
   }
-  class Person {
+  class Bird {
+    private int id = 0;
+    private static int num = 0;
     private string name = "";
-    private int age = 0;
+    private string type = "";
 
-    private int telephone = 0;
-    public void ShowNameAndAge() {
-      Console.WriteLine("名前：{0} 年齢：{1}", name , age);
-    }
-    public void allShow() {
-     Console.WriteLine("名前：{0} 年齢：{1} 電話番号：{2}", name , age, telephone); 
-    }
-    public void SetNameAndAge(string name , int age) {
+    public Bird(int id, string name, string type ) {
+      this.id = id;
+      num++;
       this.name = name;
-      this.age = age;
+      this.type = type;
     }
-    public void SetNameAndAge(string name , int age , int telephone) {
-      this.name = name;
-      this.age = age;
-      this.telephone = telephone;
+    public string Name{set;get;}
+    public string Type{set;get;}
+
+    public void showData() {
+      Console.WriteLine("ID：{0} 名前：{1} 種類：{2}", id,name,type);
     }
-    public string Name { set; get; }
-    public int Age { set; get; }
+    public static void showStaticData() {
+     Console.WriteLine("鳥の登録数：{0}", num); 
+    }
+
   }
 }
