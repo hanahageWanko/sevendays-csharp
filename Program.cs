@@ -9,38 +9,36 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("配列の長さを入力してください");
-      int x = int.Parse(Console.ReadLine());
-      int[] arr = new int[x];
-      for(int i = 0; i < x; i++) {
-        Console.Write("整数の値{0}:", i);
-        arr[i] = int.Parse(Console.ReadLine());
-      }
-        Console.WriteLine(Max(arr));
-        Console.WriteLine(Min(arr));
-        Console.WriteLine(Average(arr));
-    }
-    static int Max(int[] a) {
-      int max = int.MinValue;
-      for(int i = 0; i < a.Length ; i++) {
-        if(max < a[i]) max = a[i];
-      }
-      return max;
-    }
-    static int Min(int[] a){
-      int min = int.MaxValue;
-      for(int i = 0; i < a.Length ; i++) {
-        if(min > a[i]) min = a[i];
-      }
-      return min;
-    }
-    static double Average(int[] a){
-      int ave = 0;
-      for(int i = 0; i < a.Length ; i++) {
-        ave += a[i];
-      }
-      return ave / a.Length;
+      Person p1 = new Person();
+      p1.Name = "tetteteeteet";
+      p1.Age = 11;
+      Console.WriteLine("名前：{0}　年齢:{1}", p1.Name, p1.Age);
+      // p1.SetNameAndAge("母母", 33, 22222222); 
+      p1.allShow(); 
     }
 
+  }
+  class Person {
+    private string name = "";
+    private int age = 0;
+
+    private int telephone = 0;
+    public void ShowNameAndAge() {
+      Console.WriteLine("名前：{0} 年齢：{1}", name , age);
+    }
+    public void allShow() {
+     Console.WriteLine("名前：{0} 年齢：{1} 電話番号：{2}", name , age, telephone); 
+    }
+    public void SetNameAndAge(string name , int age) {
+      this.name = name;
+      this.age = age;
+    }
+    public void SetNameAndAge(string name , int age , int telephone) {
+      this.name = name;
+      this.age = age;
+      this.telephone = telephone;
+    }
+    public string Name { set; get; }
+    public int Age { set; get; }
   }
 }
