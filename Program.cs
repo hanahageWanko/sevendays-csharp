@@ -9,45 +9,12 @@ namespace sevendays_csharp
   {
     static void Main(string[] args)
     {
-      Crow c = new Crow();
-      Sparrow s = new Sparrow();
-      c.Sing();
-      s.Sing();
-      
-    }
-    class Crow : Bird
-    {
-        public Crow() : base("カラス")
-        {
-        }
-        public override void Sing()
-        {
-            Console.WriteLine("カーカー");
-        }
-    }
-
-    class Sparrow : Bird {
-      public Sparrow() : base("雀"){}
-
-      public override void Sing() {
-        Console.WriteLine("ちゅんちゅん");
-      }
+      Animal m = new Animal("お猿さん", "Monkey", 1);
+      ISing s = (ISing)m;
+      s.Sing("キーキー！");
+      IName n = (IName) m;
+      n.Naming("ジョージ");
 
     }
-
-    abstract class Bird {
-      private string name = "";
-      public Bird(string name) {
-        this.name = name;
-      }
-      public string Name {
-        set{name = value;}
-        get{return name;}
-      }
-
-      public abstract void Sing();
-    }
-
   }
-
 }
